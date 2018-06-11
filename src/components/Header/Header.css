@@ -1,0 +1,27 @@
+.header {
+  background-color: #009ba0;
+  color: #fff;
+  text-shadow: 0 0 10px #000,
+  0 0 15px #000,
+  0 0 20px #000;
+}
+
+header {
+  width: 900px;
+  display: flex;
+  margin: auto;
+  padding: 15px 0;
+}
+
+
+header h3, header h4 {
+  width: 33.34%;
+}
+
+.header-center {
+  text-align: center;
+}
+
+.score-container {
+  text-align: right;
+}
