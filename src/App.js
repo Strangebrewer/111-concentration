@@ -17,3 +17,7 @@ const App = () => (
 )
 
 export default App;
+
+// SO, I put whatever needed information in the image as props along with an onClick to trigger the logic (the functionality, the function)
+
+//  'props' are properties taken from the parent component... ?
