@@ -9,7 +9,7 @@ import ImageCard from "./components/ImageCard";
 
 class App extends Component {
   state = {
-    guessed: "Click an image to begin",
+    gameStatus: "Click an image to begin",
     currentScore: 0,
     highScore: 0,
     images,
@@ -30,47 +30,6 @@ class App extends Component {
     this.setState({ images });
   }
 
-  // shuffleArray = array => {
-  //   for (let i = array.length - 1; i > 0; i--) {
-  //     const j = Math.floor(Math.random() * (i + 1));
-  //     const temp = array[i];
-  //     array[i] = array[j];
-  //     array[j] = temp;
-  //   }
-  //   this.setState({ images: array });
-  // }
-
-  incrementScore = () => {
-    this.setState({
-      guessed: "Correct!",
-      currentScore: this.state.currentScore + 1
-    })
-  }
-
-  getHighScore = score => {
-    let newHighScore;
-    return (score > this.state.highScore) ? newHighScore = score : newHighScore = this.state.highScore;
-  }
-
-  resetGameData = () => {
-    let newHighScore = this.getHighScore(this.state.currentScore);
-    this.setState({
-      guessed: `Incorrect! Try again?`,
-      highScore: newHighScore,
-      currentScore: 0,
-      usedImages: []
-    })
-  }
-
-  winner = () => {
-    this.setState({
-      guessed: "You won! Play again?",
-      highScore: 12,
-      currentScore: 0,
-      usedImages: []
-    })
-  }
-
   chooseImage = event => {
     const { id } = event.target;
     if (this.state.usedImages.includes(id)) {
@@ -86,11 +45,42 @@ class App extends Component {
     }
   }
 
+  incrementScore = () => {
+    this.setState({
+      gameStatus: "Correct!",
+      currentScore: this.state.currentScore + 1
+    })
+  }
+
+  resetGameData = () => {
+    let newHighScore = this.getHighScore(this.state.currentScore);
+    this.setState({
+      gameStatus: `Incorrect! Try again?`,
+      highScore: newHighScore,
+      currentScore: 0,
+      usedImages: []
+    })
+  }
+
+  getHighScore = score => {
+    let newHighScore;
+    return (score > this.state.highScore) ? newHighScore = score : newHighScore = this.state.highScore;
+  }
+
+  winner = () => {
+    this.setState({
+      gameStatus: "You won! Play again?",
+      highScore: 12,
+      currentScore: 0,
+      usedImages: []
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <Header
-          guessed={this.state.guessed}
+          gameStatus={this.state.gameStatus}
           currentScore={this.state.currentScore}
           highScore={this.state.highScore}
         />
