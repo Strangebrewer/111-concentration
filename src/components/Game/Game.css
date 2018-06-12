@@ -6,12 +6,3 @@
   padding: 20px;
   margin: auto;
 }
-
-.game-img {
-  padding: 10px;
-  width: 200px;
-  margin: auto;
-  border: 3px solid #bd0000;
-  background-color: #fff;
-  box-shadow: 0 0 15px #fff;
-}

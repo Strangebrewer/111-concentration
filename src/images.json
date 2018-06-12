@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "scooby-doo",
+    "image": "./images/pic1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "animaniacs",
+    "image": "./images/pic2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "pinky",
+    "image": "./images/pic3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "brain",
+    "image": "./images/pic4.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "anger",
+    "image": "./images/pic5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "joy",
+    "image": "./images/pic6.JPG"
+  },
+  {
+    "id": 7,
+    "name": "disgust",
+    "image": "./images/pic7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "sadness",
+    "image": "./images/pic8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "fear",
+    "image": "./images/pic9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "edna-mode",
+    "image": "./images/pic10.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "jack-jack",
+    "image": "./images/pic11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "nemo",
+    "image": "./images/pic12.png"
+  }
+]
