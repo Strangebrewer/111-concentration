@@ -6,3 +6,13 @@
   background-color: #fff;
   box-shadow: 0 0 15px #fff;
 }
+
+.game-img:hover {
+  padding: 0;
+  border: 13px dotted #fff;
+  background-color: #850000;
+  box-shadow: 0 0 10px #00eef7,
+  0 0 20px #00eef7,
+  0 0 30px #00eef7,
+  0 0 40px #00eef7;
+}
