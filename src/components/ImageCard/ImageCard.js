@@ -7,7 +7,7 @@ const ImageCard = props => (
     src={props.image}
     alt={props.name}
     id={props.id}
-    onClick={props.chooseImage(props.id)}
+    onClick={props.clickImage(props.id)}
   />
 );
 

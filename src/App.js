@@ -30,7 +30,7 @@ class App extends Component {
     this.setState({ images });
   }
 
-  chooseImage = event => {
+  clickImage = event => {
     const { id } = event.target;
     if (this.state.usedImages.includes(id)) {
       this.resetGameData();
@@ -64,7 +64,8 @@ class App extends Component {
 
   getHighScore = score => {
     let newHighScore;
-    return (score > this.state.highScore) ? newHighScore = score : newHighScore = this.state.highScore;
+    (score > this.state.highScore) ? newHighScore = score : newHighScore = this.state.highScore;
+    return newHighScore;
   }
 
   winner = () => {
@@ -93,7 +94,7 @@ class App extends Component {
                 key={image.id}
                 name={image.name}
                 image={image.image}
-                chooseImage={() => this.chooseImage}
+                clickImage={() => this.clickImage}
               />
             ))}
           </Game>
